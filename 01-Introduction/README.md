@@ -1,50 +1,17 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![javascript tech gunn 16hrs_pages-to-jpg-0001](https://user-images.githubusercontent.com/37560890/169889427-1f697fff-b468-44a2-a462-1cb4a6a79d5d.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0002](https://user-images.githubusercontent.com/37560890/169889438-8d4e0237-f3c6-4c9e-96be-5a389fd23b95.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0003](https://user-images.githubusercontent.com/37560890/169889450-df2a34a2-a8b3-4d5e-88b6-5dd98771a345.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0004](https://user-images.githubusercontent.com/37560890/169889456-c6a85d29-ba4a-4ddc-9c4e-952b6129567d.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0005](https://user-images.githubusercontent.com/37560890/169889460-dae7b353-ea08-4e76-aa07-631042f9c878.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0006](https://user-images.githubusercontent.com/37560890/169889472-93db69cc-36da-4359-8dd4-84cb79e55538.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0006](https://user-images.githubusercontent.com/37560890/169889486-193adde7-5f45-4cf5-a89d-0b495177d5c8.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0008](https://user-images.githubusercontent.com/37560890/169889491-1473317f-7ad7-4b16-ba7b-646be30b38ba.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0009](https://user-images.githubusercontent.com/37560890/169889498-ce2b1214-0f55-43c7-acad-fc0d85078ada.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0010](https://user-images.githubusercontent.com/37560890/169889503-a49e9e89-9bd3-45fe-8d84-765096b78ce8.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0011](https://user-images.githubusercontent.com/37560890/169889513-38f9bcb7-4a77-490f-97c8-e6bb8a820d25.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0012](https://user-images.githubusercontent.com/37560890/169889520-ba40e477-642e-4a63-b99b-8d08734de970.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0013](https://user-images.githubusercontent.com/37560890/169889528-237d31cc-0289-49fa-86eb-fc15de7831aa.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0014](https://user-images.githubusercontent.com/37560890/169889539-6602f62c-6f75-405d-9aec-4541797a723f.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0015](https://user-images.githubusercontent.com/37560890/169889545-8744b80d-2d60-43c9-ba83-2be93ea50eeb.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0016](https://user-images.githubusercontent.com/37560890/169889556-5b46f391-b6fc-4894-a13c-8dda2669a7ec.jpg)
+![javascript tech gunn 16hrs_pages-to-jpg-0017](https://user-images.githubusercontent.com/37560890/169889561-f43699dd-2990-4c78-8209-ea96676ec2e3.jpg)
